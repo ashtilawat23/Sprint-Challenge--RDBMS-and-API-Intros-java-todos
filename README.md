@@ -46,11 +46,11 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 You will be creating a REST api service to store and read data from an H2 database.
 
-- [ ] Please fork and clone this repository. This repository has a starting application called todos. You must start working from there. Regularly commit and push your code as appropriate.
+- [X] Please fork and clone this repository. This repository has a starting application called todos. You must start working from there. Regularly commit and push your code as appropriate.
 
-- [ ] The initial application contains the model for the users table. Endpoints are already created and the structure for auditing fields is in place. You are adding the model for the todos table and updating the services to work with the new table.
+- [X] The initial application contains the model for the users table. Endpoints are already created and the structure for auditing fields is in place. You are adding the model for the todos table and updating the services to work with the new table.
 
-- [ ] **TODOS**
+- [X] **TODOS**
   - `todoid` primary key, not null long
   - `description` string, not null
   - `completed` boolean. Note that for all new todos, default completed to false
@@ -58,17 +58,17 @@ You will be creating a REST api service to store and read data from an H2 databa
   - All tables must have the standard 4 auditing fields in place and working, being populated: created on, created by, last modified on, last modified by. The auditing usernames will all default to `llama`.
   - USERS have a one to many relationship with TODOS.
 
-- [ ] SeedData.java is a class provided to populate the database. The structure cannot be changed! Do populate the database with this data.
+- [X] SeedData.java is a class provided to populate the database. The structure cannot be changed! Do populate the database with this data.
 
-- [ ] Do NOT change or delete entries in the POM.XML - Dependencies, plugins, etc. may be added as needed
+- [X] Do NOT change or delete entries in the POM.XML - Dependencies, plugins, etc. may be added as needed
 
 The following end points are already available in the initial application. You are to make sure the end points work with the newly added todos table
 
-- [ ] GET /users/users - return all of the users and their todos.
+- [X] GET /users/users - return all of the users and their todos.
 
-- [ ] GET /users/user/{userid} - return the user and their todos based off of user id.
+- [X] GET /users/user/{userid} - return the user and their todos based off of user id.
 
-- [ ] POST /users/user - adds a user with their todos
+- [X] POST /users/user - adds a user with their todos
 
   You can use the following to test this!
 
