@@ -1,3 +1,4 @@
+
 package com.lambdaschool.todos;
 
 import org.springframework.boot.SpringApplication;
@@ -20,6 +21,6 @@ public class TodosApplicationTests
     public static void main(String[] args)
     {
         SpringApplication.run(TodosApplication.class,
-            args);
+                args);
     }
 }
