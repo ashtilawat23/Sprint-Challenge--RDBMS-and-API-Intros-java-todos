@@ -67,10 +67,9 @@ public class TodosControllerIntegrationTest
                         "testTodo"));
         newUser = userService.save(newUser);
 
-        mockMvc.perform(MockMvcRequestBuilders.patch("/todos/todo/{todoid}",
-                newUser.getTodos()
-                        .get(0)
-                        .getTodoid()))
+        mockMvc.perform(MockMvcRequestBuilders.patch("/todos/todo/{todoid}", newUser.getTodos()
+                .get(0)
+                .getTodoid()))
                 .andExpect(status().isOk());
 
         newUser = userService.findUserById(newUser.getUserid());
